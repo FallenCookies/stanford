@@ -11,16 +11,38 @@ struct EmojiMemoryGameView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
     var body: some View {
         ZStack {
-            Color(.black).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            Grid(items: viewModel.cards){
-                    card in CardView(card: card).onTapGesture {
-                        viewModel.choose(card: card)
-                    }
-                    .padding(5)
+            Color(.black).edgesIgnoringSafeArea(.all)
+            VStack {
+                HStack {
+                    Text(viewModel.theme)
+                        .foregroundColor(viewModel.color)
+                        .padding()
+                    Spacer()
+                    Text("some score")
+                        .foregroundColor(.white)
+                        .padding()
                 }
-            .padding()
-            .foregroundColor(Color.orange)
-            .font(Font.largeTitle)
+                Grid(items: viewModel.cards){
+                        card in CardView(card: card).onTapGesture {
+                            viewModel.choose(card: card)
+                        }
+                        .padding(5)
+                    }
+                .padding()
+                .foregroundColor(viewModel.color)
+                .font(Font.largeTitle)
+                Button(action: {
+                    viewModel.startNewGame()
+                }, label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(height: 50, alignment: .center)
+                            .padding()
+                        Text("New game")
+                            .foregroundColor(.white)
+                    }
+                })
+            }
         }
     }
 }
