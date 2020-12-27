@@ -17,6 +17,8 @@
 		F585EC062594BCCF00761019 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585EC052594BCCF00761019 /* GridLayout.swift */; };
 		F585EC092594C27E00761019 /* Array+identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585EC082594C27E00761019 /* Array+identifiable.swift */; };
 		F585EC0C2594CEF800761019 /* Array + only.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585EC0B2594CEF800761019 /* Array + only.swift */; };
+		F585EC2B259616E000761019 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585EC2A259616E000761019 /* Pie.swift */; };
+		F585EC2E25961DE100761019 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = F585EC2D25961DE100761019 /* Cardify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F585EC052594BCCF00761019 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		F585EC082594C27E00761019 /* Array+identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+identifiable.swift"; sourceTree = "<group>"; };
 		F585EC0B2594CEF800761019 /* Array + only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + only.swift"; sourceTree = "<group>"; };
+		F585EC2A259616E000761019 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		F585EC2D25961DE100761019 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 			children = (
 				F585EBEB2592923100761019 /* MemoryGameApp.swift */,
 				F585EBED2592923100761019 /* EmojiMemoryGameView.swift */,
+				F585EC2D25961DE100761019 /* Cardify.swift */,
+				F585EC2A259616E000761019 /* Pie.swift */,
 				F585EC022594B85B00761019 /* Grid.swift */,
 				F585EC082594C27E00761019 /* Array+identifiable.swift */,
 				F585EC052594BCCF00761019 /* GridLayout.swift */,
@@ -159,10 +165,12 @@
 				F585EC092594C27E00761019 /* Array+identifiable.swift in Sources */,
 				F585EC0C2594CEF800761019 /* Array + only.swift in Sources */,
 				F585EBFC2592925A00761019 /* MemoryGame.swift in Sources */,
+				F585EC2B259616E000761019 /* Pie.swift in Sources */,
 				F585EBEE2592923100761019 /* EmojiMemoryGameView.swift in Sources */,
 				F585EBEC2592923100761019 /* MemoryGameApp.swift in Sources */,
 				F585EC062594BCCF00761019 /* GridLayout.swift in Sources */,
 				F585EC032594B85B00761019 /* Grid.swift in Sources */,
+				F585EC2E25961DE100761019 /* Cardify.swift in Sources */,
 				F585EBFF259293F700761019 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
