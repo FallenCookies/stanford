@@ -6,13 +6,25 @@
 //
 
 import SwiftUI
+import Combine
 
 class EmojiArtDocument: ObservableObject {
     
     static let palete: String = "⚽️🏀🏈⚾️🥎🏐🏉"
     
-    @Published private var emojiArt: EmojiArt = EmojiArt()
+    @Published private var emojiArt: EmojiArt
     
+    private static let untitled = "EmojiArtDocument.Untitled"
+    
+    private var autosaveCancellable: AnyCancellable?
+    
+    init(){
+        emojiArt = EmojiArt(json: UserDefaults.standard.data(forKey: EmojiArtDocument.untitled)) ?? EmojiArt()
+        autosaveCancellable = $emojiArt.sink{ emojiArt in
+            UserDefaults.standard.set(emojiArt.json, forKey: EmojiArtDocument.untitled)
+        }
+        fetchBackgroundImageData()
+    }
     @Published private(set) var backgroundImage: UIImage?
     
     var emojis: [EmojiArt.Emoji] { emojiArt.emojis }
@@ -37,24 +49,24 @@ class EmojiArtDocument: ObservableObject {
         }
     }
     
-    func setBackGroundURL(_ url: URL?) {
-        emojiArt.backgroundURL = url?.imageURL
-        fetchBackgroundImageData()
+    var backgroundURL: URL? {
+        set{
+            emojiArt.backgroundURL = newValue?.imageURL
+            fetchBackgroundImageData()
+        }
+        get{
+            emojiArt.backgroundURL
+        }
     }
     
     private func fetchBackgroundImageData() {
         backgroundImage = nil
         if let url = self.emojiArt.backgroundURL {
-            DispatchQueue.global(qos: .userInitiated).async {
-                if let imageDate = try? Data(contentsOf: url){
-                    DispatchQueue.main.async {
-                        if url == self.emojiArt.backgroundURL {
-                            self.backgroundImage = UIImage(data: imageDate)
-                        }
-                    }
-                    
-                }
+            let session = URLSession.shared
+            let publisher = session.dataTaskPublisher(for: url).map {
+                data, urlResponce in UIImage(data: data)
             }
+            .receive(on: DispatchQueue.main)
         }
     }
 }
