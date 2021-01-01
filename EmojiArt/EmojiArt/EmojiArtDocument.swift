@@ -59,15 +59,20 @@ class EmojiArtDocument: ObservableObject {
         }
     }
     
+    private var fetchImageCancellable: AnyCancellable?
+    
     private func fetchBackgroundImageData() {
         backgroundImage = nil
         if let url = self.emojiArt.backgroundURL {
-            let session = URLSession.shared
-            let publisher = session.dataTaskPublisher(for: url).map {
-                data, urlResponce in UIImage(data: data)
-            }
-            .receive(on: DispatchQueue.main)
+            fetchImageCancellable?.cancel()
+            fetchImageCancellable = URLSession.shared.dataTaskPublisher(for: url)
+                .map { data, urlResponce in UIImage(data: data)}
+                .receive(on: DispatchQueue.main)
+                .replaceError(with: nil)
+                .assign(to: \.backgroundImage, on: self)
+            
         }
+        
     }
 }
 
