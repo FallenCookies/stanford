@@ -10,7 +10,7 @@ import Combine
 
 class EmojiArtDocument: ObservableObject {
     
-    static let palete: String = "⚽️🏀🏈⚾️🥎🏐🏉"
+    static let palette: String = "⚽️🏀🏈⚾️🥎🏐🏉"
     
     @Published private var emojiArt: EmojiArt
     

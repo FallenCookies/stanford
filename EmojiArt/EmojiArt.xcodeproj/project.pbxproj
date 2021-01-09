@@ -17,6 +17,10 @@
 		F55BBDC32599EBCE007253CA /* OptionalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDC22599EBCE007253CA /* OptionalImage.swift */; };
 		F55BBDC6259A0575007253CA /* AnimatableSystemFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDC5259A0575007253CA /* AnimatableSystemFontModifier.swift */; };
 		F55BBDC9259F8E81007253CA /* Spinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDC8259F8E81007253CA /* Spinning.swift */; };
+		F55BBDCC25A112A3007253CA /* PalleteChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDCB25A112A3007253CA /* PalleteChooser.swift */; };
+		F55BBDCF25A9F870007253CA /* EmojiArtDocumentPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDCE25A9F870007253CA /* EmojiArtDocumentPalette.swift */; };
+		F55BBDD325AA0E26007253CA /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDD125AA0E26007253CA /* GridLayout.swift */; };
+		F55BBDD425AA0E26007253CA /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDD225AA0E26007253CA /* Grid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		F55BBDC22599EBCE007253CA /* OptionalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalImage.swift; sourceTree = "<group>"; };
 		F55BBDC5259A0575007253CA /* AnimatableSystemFontModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableSystemFontModifier.swift; sourceTree = "<group>"; };
 		F55BBDC8259F8E81007253CA /* Spinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinning.swift; sourceTree = "<group>"; };
+		F55BBDCB25A112A3007253CA /* PalleteChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalleteChooser.swift; sourceTree = "<group>"; };
+		F55BBDCE25A9F870007253CA /* EmojiArtDocumentPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentPalette.swift; sourceTree = "<group>"; };
+		F55BBDD125AA0E26007253CA /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridLayout.swift; path = ../../MemoryGame/MemoryGame/GridLayout.swift; sourceTree = "<group>"; };
+		F55BBDD225AA0E26007253CA /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = ../../MemoryGame/MemoryGame/Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,10 @@
 				F55BBDBE25980293007253CA /* EmojiArtExtensions.swift */,
 				F55BBDA32597D5F8007253CA /* EmojiArtApp.swift */,
 				F55BBDA52597D5F8007253CA /* EmojiArtDocumentView.swift */,
+				F55BBDCE25A9F870007253CA /* EmojiArtDocumentPalette.swift */,
+				F55BBDD225AA0E26007253CA /* Grid.swift */,
+				F55BBDD125AA0E26007253CA /* GridLayout.swift */,
+				F55BBDCB25A112A3007253CA /* PalleteChooser.swift */,
 				F55BBDC8259F8E81007253CA /* Spinning.swift */,
 				F55BBDC5259A0575007253CA /* AnimatableSystemFontModifier.swift */,
 				F55BBDC22599EBCE007253CA /* OptionalImage.swift */,
@@ -159,11 +171,15 @@
 				F55BBDC6259A0575007253CA /* AnimatableSystemFontModifier.swift in Sources */,
 				F55BBDBC2597DB27007253CA /* EmojiArt.swift in Sources */,
 				F55BBDBF25980293007253CA /* EmojiArtExtensions.swift in Sources */,
+				F55BBDCC25A112A3007253CA /* PalleteChooser.swift in Sources */,
 				F55BBDA62597D5F8007253CA /* EmojiArtDocumentView.swift in Sources */,
+				F55BBDCF25A9F870007253CA /* EmojiArtDocumentPalette.swift in Sources */,
 				F55BBDC32599EBCE007253CA /* OptionalImage.swift in Sources */,
 				F55BBDB42597D62F007253CA /* EmojiArtDocument.swift in Sources */,
 				F55BBDA42597D5F8007253CA /* EmojiArtApp.swift in Sources */,
 				F55BBDC9259F8E81007253CA /* Spinning.swift in Sources */,
+				F55BBDD325AA0E26007253CA /* GridLayout.swift in Sources */,
+				F55BBDD425AA0E26007253CA /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
