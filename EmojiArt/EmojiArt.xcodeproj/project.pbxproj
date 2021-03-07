@@ -21,6 +21,8 @@
 		F55BBDCF25A9F870007253CA /* EmojiArtDocumentPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDCE25A9F870007253CA /* EmojiArtDocumentPalette.swift */; };
 		F55BBDD325AA0E26007253CA /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDD125AA0E26007253CA /* GridLayout.swift */; };
 		F55BBDD425AA0E26007253CA /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDD225AA0E26007253CA /* Grid.swift */; };
+		F55BBDD725ACCDEB007253CA /* EmojiArtDocumentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDD625ACCDEB007253CA /* EmojiArtDocumentStore.swift */; };
+		F55BBDDA25ACD11A007253CA /* EmojiArtDocumentChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BBDD925ACD11A007253CA /* EmojiArtDocumentChooser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F55BBDCE25A9F870007253CA /* EmojiArtDocumentPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentPalette.swift; sourceTree = "<group>"; };
 		F55BBDD125AA0E26007253CA /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridLayout.swift; path = ../../MemoryGame/MemoryGame/GridLayout.swift; sourceTree = "<group>"; };
 		F55BBDD225AA0E26007253CA /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = ../../MemoryGame/MemoryGame/Grid.swift; sourceTree = "<group>"; };
+		F55BBDD625ACCDEB007253CA /* EmojiArtDocumentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentStore.swift; sourceTree = "<group>"; };
+		F55BBDD925ACD11A007253CA /* EmojiArtDocumentChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentChooser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,21 +76,23 @@
 		F55BBDA22597D5F8007253CA /* EmojiArt */ = {
 			isa = PBXGroup;
 			children = (
-				F55BBDBE25980293007253CA /* EmojiArtExtensions.swift */,
+				F55BBDC5259A0575007253CA /* AnimatableSystemFontModifier.swift */,
+				F55BBDA72597D5FB007253CA /* Assets.xcassets */,
+				F55BBDBB2597DB27007253CA /* EmojiArt.swift */,
 				F55BBDA32597D5F8007253CA /* EmojiArtApp.swift */,
-				F55BBDA52597D5F8007253CA /* EmojiArtDocumentView.swift */,
+				F55BBDB32597D62F007253CA /* EmojiArtDocument.swift */,
+				F55BBDD925ACD11A007253CA /* EmojiArtDocumentChooser.swift */,
 				F55BBDCE25A9F870007253CA /* EmojiArtDocumentPalette.swift */,
+				F55BBDD625ACCDEB007253CA /* EmojiArtDocumentStore.swift */,
+				F55BBDA52597D5F8007253CA /* EmojiArtDocumentView.swift */,
+				F55BBDBE25980293007253CA /* EmojiArtExtensions.swift */,
 				F55BBDD225AA0E26007253CA /* Grid.swift */,
 				F55BBDD125AA0E26007253CA /* GridLayout.swift */,
-				F55BBDCB25A112A3007253CA /* PalleteChooser.swift */,
-				F55BBDC8259F8E81007253CA /* Spinning.swift */,
-				F55BBDC5259A0575007253CA /* AnimatableSystemFontModifier.swift */,
-				F55BBDC22599EBCE007253CA /* OptionalImage.swift */,
-				F55BBDBB2597DB27007253CA /* EmojiArt.swift */,
-				F55BBDB32597D62F007253CA /* EmojiArtDocument.swift */,
-				F55BBDA72597D5FB007253CA /* Assets.xcassets */,
 				F55BBDAC2597D5FB007253CA /* Info.plist */,
+				F55BBDC22599EBCE007253CA /* OptionalImage.swift */,
+				F55BBDCB25A112A3007253CA /* PalleteChooser.swift */,
 				F55BBDA92597D5FB007253CA /* Preview Content */,
+				F55BBDC8259F8E81007253CA /* Spinning.swift */,
 			);
 			path = EmojiArt;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 				F55BBDC32599EBCE007253CA /* OptionalImage.swift in Sources */,
 				F55BBDB42597D62F007253CA /* EmojiArtDocument.swift in Sources */,
 				F55BBDA42597D5F8007253CA /* EmojiArtApp.swift in Sources */,
+				F55BBDDA25ACD11A007253CA /* EmojiArtDocumentChooser.swift in Sources */,
+				F55BBDD725ACCDEB007253CA /* EmojiArtDocumentStore.swift in Sources */,
 				F55BBDC9259F8E81007253CA /* Spinning.swift in Sources */,
 				F55BBDD325AA0E26007253CA /* GridLayout.swift in Sources */,
 				F55BBDD425AA0E26007253CA /* Grid.swift in Sources */,
